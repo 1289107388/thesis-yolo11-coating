@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>风机塔筒涂层缺陷检测 · 毕业设计演示</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="title">风机塔筒涂层缺陷检测<span>基于改进 YOLOv11 与 CoatingDet 数据集</span></div>
+    <nav>
+      <button class="tab active" data-tab="overview">概览</button>
+      <button class="tab" data-tab="dataset">数据集</button>
+      <button class="tab" data-tab="results">实验结果</button>
+      <button class="tab" data-tab="demo">在线检测</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="overview" class="panel active">
+  <div class="cards">
+    <div class="card"><b>5,416</b><span>生产环境高清图像</span></div>
+    <div class="card"><b>2 类</b><span>defect 需返修 / particle 良性</span></div>
+    <div class="card"><b>2,385</b><span>官方协议 512px 切片</span></div>
+    <div class="card"><b>2.6M</b><span>检测器参数量（yolo11n 级）</span></div>
+    <div class="card"><b>3-6 ms</b><span>单张推理耗时（GPU）</span></div>
+  </div>
+  <div class="pipeline">
+    <div class="step">高清原图<br><i>5472×3648</i></div><div class="arr">→</div>
+    <div class="step">512 切片<br><i>空片丢弃</i></div><div class="arr">→</div>
+    <div class="step">YOLOv11n<br><i>官方协议基线</i></div><div class="arr">→</div>
+    <div class="step hl">改进<br><i>CBAM · WIoU · 白平衡</i></div><div class="arr">→</div>
+    <div class="step">四域评测<br><i>val + 3 测试域</i></div>
+  </div>
+  <p class="lead">风电塔筒防腐涂层的夹杂、针孔、划痕与污染物缺陷决定是否返修，人工目视检查效率低、标准难统一。
+  本系统以生产环境数据集 CoatingDet 为基础，复现 YOLOv11 官方协议基线，并针对<i>跨色温域误报</i>与<i>缺陷-灰尘判别</i>
+  两条主线进行改进，全部结果可复现、可在线体验。</p>
+</section>
+
+<section id="dataset" class="panel">
+  <h2>数据集统计（CoatingDet v2）</h2>
+  <figure><img src="/static/img/fig_dataset_domains.png" alt="各域切片与框数"><figcaption>图1 官方切片协议下各子集的切片数与两类标注框数</figcaption></figure>
+  <figure><img src="/static/img/fig_defect_subtypes.png" alt="缺陷子类分布"><figcaption>图2 defect 类四个子类框数（针孔仅 19 框，子类过稀故合并）</figcaption></figure>
+  <figure><img src="/static/img/fig_bbox_sizes.png" alt="目标尺寸分布"><figcaption>图3 切片级目标等效边长分布：中位数 74px，无 &lt;32px 目标——切片方案本身即小目标对策</figcaption></figure>
+</section>
+
+<section id="results" class="panel">
+  <h2>实验结果（mAP50 / mAP50:0.95，conf=0.001 · NMS 0.7）</h2>
+  <div class="barbox"><label>指标域：
+    <select id="metric-domain"><option value="val">val</option><option value="test_1">test_1 暖色</option><option value="test_2">test_2</option><option value="test_3">test_3</option></select>
+  </label></div>
+  <div id="bars"></div>
+  <table id="res-table"><thead><tr><th>实验</th><th>val</th><th>test_1</th><th>test_2</th><th>test_3</th></tr></thead><tbody></tbody></table>
+  <p class="hint">全部实验同协议：epochs 20 · batch 8 · imgsz 512 · seed 0；表值上为 mAP50、下为 mAP50:0.95。</p>
+</section>
+
+<section id="demo" class="panel">
+  <h2>在线检测</h2>
+  <div class="demo-grid">
+    <div class="controls">
+      <label>模型：<select id="model"></select></label>
+      <label>置信度阈值：<output id="conf-out">0.25</output>
+        <input type="range" id="conf" min="0.05" max="0.6" step="0.05" value="0.25"></label>
+      <label>测试样例（按标注框数挑选）：</label>
+      <div id="samples" class="samples"></div>
+      <label>或上传图片（塔筒涂层照片 / 切片）：</label>
+      <input type="file" id="upload" accept="image/*">
+      <button id="run" class="primary">开始检测</button>
+      <div id="counts" class="counts"></div>
+    </div>
+    <div class="viewer"><img id="result" alt="检测结果将显示在这里"><div id="dets"></div></div>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap">本科毕业设计演示系统 · CoatingDet v2 (CC BY 4.0) · 改进代码与全部实验记录见 GitHub: 1289107388/thesis-yolo11-coating</div></footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

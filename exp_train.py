@@ -28,6 +28,10 @@ def main():
     ap.add_argument("--name", required=True)
     ap.add_argument("--data", default=None, help="data yaml，默认官方 configs/data_val.yaml")
     ap.add_argument("--loss", choices=["ciou", "wiou"], default="ciou")
+    ap.add_argument("--wiou-alpha", type=float, default=None)
+    ap.add_argument("--wiou-delta", type=float, default=None)
+    ap.add_argument("--wiou-rmin", type=float, default=None)
+    ap.add_argument("--wiou-rmax", type=float, default=None)
     ap.add_argument("--hsv-h", type=float, default=None, help="色相增强范围（官方默认 0.015）")
     ap.add_argument("--epochs", type=int, default=20)
     ap.add_argument("--batch", type=int, default=8)
@@ -40,8 +44,9 @@ def main():
 
     if a.loss == "wiou":
         import wiou
-        wiou.apply()
-        print("[exp_train] 已启用 WIoUv3 边界框损失")
+        wiou.apply(alpha=a.wiou_alpha, delta=a.wiou_delta, r_min=a.wiou_rmin, r_max=a.wiou_rmax)
+        print(f"[exp_train] WIoUv3: alpha={a.wiou_alpha or 2.0} delta={a.wiou_delta or 3.0} "
+              f"r_min={a.wiou_rmin} r_max={a.wiou_rmax}")
 
     model = YOLO(a.model)
     if a.weights:

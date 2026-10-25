@@ -1,0 +1,2242 @@
+{
+ "A0": {
+  "val": {
+   "weights": "runs/yolo11n_20ep/weights/best.pt",
+   "data": "configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8878998970262817,
+    "R": 0.7878787878787878,
+    "mAP50": 0.8195963421707924,
+    "mAP50_95": 0.44379065706985427
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8878998970262817,
+     "R": 0.7878787878787878,
+     "mAP50": 0.8195963421707924,
+     "mAP50_95": 0.44379065706985427
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 27.0,
+    "defect_as_particle": 1.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 16.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "runs/yolo11n_20ep/weights/best.pt",
+   "data": "configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.4618937644341801,
+    "R": 0.9174311926605505,
+    "mAP50": 0.7110544104865675,
+    "mAP50_95": 0.494184719442426
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.4618937644341801,
+     "R": 0.9174311926605505,
+     "mAP50": 0.7110544104865675,
+     "mAP50_95": 0.494184719442426
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 7.0,
+    "particle_as_defect": 175.0,
+    "particle_missed": 36.0,
+    "background_as_defect": 17.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "runs/yolo11n_20ep/weights/best.pt",
+   "data": "configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7325286322924357,
+    "R": 0.7422903832892533,
+    "mAP50": 0.7194725806933701,
+    "mAP50_95": 0.30183423404012155
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7325286322924357,
+     "R": 0.7422903832892533,
+     "mAP50": 0.7194725806933701,
+     "mAP50_95": 0.30183423404012155
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 87.0,
+    "defect_as_particle": 5.0,
+    "defect_missed": 15.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 40.0,
+    "background_as_particle": 10.0
+   }
+  },
+  "test3": {
+   "weights": "runs/yolo11n_20ep/weights/best.pt",
+   "data": "configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7573951133504571,
+    "R": 0.7469119226638024,
+    "mAP50": 0.8155689237581216,
+    "mAP50_95": 0.5075348034637287
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6348648499636361,
+     "R": 0.756578947368421,
+     "mAP50": 0.7363341739228476,
+     "mAP50_95": 0.375389875657799
+    },
+    "particle": {
+     "P": 0.8799253767372781,
+     "R": 0.7372448979591837,
+     "mAP50": 0.8948036735933957,
+     "mAP50_95": 0.6396797312696588
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 139.0,
+    "defect_as_particle": 12.0,
+    "defect_missed": 1.0,
+    "particle_as_particle": 636.0,
+    "particle_as_defect": 144.0,
+    "particle_missed": 4.0,
+    "background_as_defect": 208.0,
+    "background_as_particle": 124.0
+   }
+  }
+ },
+ "A0_60ep": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/A0_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.79344107249023,
+    "R": 0.7878787878787878,
+    "mAP50": 0.8195729269879477,
+    "mAP50_95": 0.504572899794237
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.79344107249023,
+     "R": 0.7878787878787878,
+     "mAP50": 0.8195729269879477,
+     "mAP50_95": 0.504572899794237
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 27.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 6.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 15.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/A0_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8423793756884406,
+    "R": 0.44128277657376574,
+    "mAP50": 0.7081601580629695,
+    "mAP50_95": 0.5352231787194123
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.8423793756884406,
+     "R": 0.44128277657376574,
+     "mAP50": 0.7081601580629695,
+     "mAP50_95": 0.5352231787194123
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 33.0,
+    "particle_as_defect": 98.0,
+    "particle_missed": 87.0,
+    "background_as_defect": 17.0,
+    "background_as_particle": 2.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/A0_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8462038279989265,
+    "R": 0.822429906542056,
+    "mAP50": 0.8612930187267,
+    "mAP50_95": 0.3633140777654523
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8462038279989265,
+     "R": 0.822429906542056,
+     "mAP50": 0.8612930187267,
+     "mAP50_95": 0.3633140777654523
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 94.0,
+    "defect_as_particle": 6.0,
+    "defect_missed": 7.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 47.0,
+    "background_as_particle": 10.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/A0_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7690610495949772,
+    "R": 0.7678654508521556,
+    "mAP50": 0.8223288632110699,
+    "mAP50_95": 0.5607698223515298
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6289999239099588,
+     "R": 0.7828947368421053,
+     "mAP50": 0.7492723928555693,
+     "mAP50_95": 0.4347488263552199
+    },
+    "particle": {
+     "P": 0.9091221752799957,
+     "R": 0.7528361648622058,
+     "mAP50": 0.8953853335665704,
+     "mAP50_95": 0.6867908183478401
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 137.0,
+    "defect_as_particle": 12.0,
+    "defect_missed": 3.0,
+    "particle_as_particle": 646.0,
+    "particle_as_defect": 124.0,
+    "particle_missed": 14.0,
+    "background_as_defect": 181.0,
+    "background_as_particle": 115.0
+   }
+  }
+ },
+ "B_p2": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/B_p2/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.688453091854677,
+    "R": 0.8181818181818182,
+    "mAP50": 0.7191955583957712,
+    "mAP50_95": 0.40371822809299795
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.688453091854677,
+     "R": 0.8181818181818182,
+     "mAP50": 0.7191955583957712,
+     "mAP50_95": 0.40371822809299795
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 20.0,
+    "defect_as_particle": 9.0,
+    "defect_missed": 4.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 15.0,
+    "background_as_particle": 2.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/B_p2/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5935767438210701,
+    "R": 0.7614678899082569,
+    "mAP50": 0.7465980682651249,
+    "mAP50_95": 0.46421119915821896
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.5935767438210701,
+     "R": 0.7614678899082569,
+     "mAP50": 0.7465980682651249,
+     "mAP50_95": 0.46421119915821896
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 4.0,
+    "particle_as_defect": 106.0,
+    "particle_missed": 108.0,
+    "background_as_defect": 12.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/B_p2/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.703365460094765,
+    "R": 0.7534692638379241,
+    "mAP50": 0.8195556210157694,
+    "mAP50_95": 0.35598153577309655
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.703365460094765,
+     "R": 0.7534692638379241,
+     "mAP50": 0.8195556210157694,
+     "mAP50_95": 0.35598153577309655
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 64.0,
+    "defect_as_particle": 34.0,
+    "defect_missed": 9.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 48.0,
+    "background_as_particle": 25.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/B_p2/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7082813807649738,
+    "R": 0.7877897117336385,
+    "mAP50": 0.7667144341406171,
+    "mAP50_95": 0.4867007729061693
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.5629516989461836,
+     "R": 0.75,
+     "mAP50": 0.6375848068697729,
+     "mAP50_95": 0.33737242476892043
+    },
+    "particle": {
+     "P": 0.8536110625837641,
+     "R": 0.825579423467277,
+     "mAP50": 0.8958440614114612,
+     "mAP50_95": 0.6360291210434184
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 130.0,
+    "defect_as_particle": 14.0,
+    "defect_missed": 8.0,
+    "particle_as_particle": 690.0,
+    "particle_as_defect": 88.0,
+    "particle_missed": 6.0,
+    "background_as_defect": 189.0,
+    "background_as_particle": 234.0
+   }
+  }
+ },
+ "C_60ep": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8721967633614254,
+    "R": 0.8484848484848485,
+    "mAP50": 0.8626700985057582,
+    "mAP50_95": 0.4110032849673222
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8721967633614254,
+     "R": 0.8484848484848485,
+     "mAP50": 0.8626700985057582,
+     "mAP50_95": 0.4110032849673222
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 29.0,
+    "defect_as_particle": 1.0,
+    "defect_missed": 3.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 9.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7413793103448276,
+    "R": 0.3944954128440367,
+    "mAP50": 0.5484286411292396,
+    "mAP50_95": 0.3492995379149805
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.7413793103448276,
+     "R": 0.3944954128440367,
+     "mAP50": 0.5484286411292396,
+     "mAP50_95": 0.3492995379149805
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 217.0,
+    "particle_missed": 1.0,
+    "background_as_defect": 65.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8063837523138463,
+    "R": 0.8037383177570093,
+    "mAP50": 0.7618034507812761,
+    "mAP50_95": 0.2838530230352866
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8063837523138463,
+     "R": 0.8037383177570093,
+     "mAP50": 0.7618034507812761,
+     "mAP50_95": 0.2838530230352866
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 89.0,
+    "defect_as_particle": 3.0,
+    "defect_missed": 15.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 32.0,
+    "background_as_particle": 9.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5840279111845171,
+    "R": 0.7868653945805997,
+    "mAP50": 0.6071456410039187,
+    "mAP50_95": 0.37977925134901735
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.3002269766442776,
+     "R": 0.7697368421052632,
+     "mAP50": 0.3091062507271288,
+     "mAP50_95": 0.15703150750050393
+    },
+    "particle": {
+     "P": 0.8678288457247566,
+     "R": 0.8039939470559362,
+     "mAP50": 0.9051850312807086,
+     "mAP50_95": 0.6025269951975307
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 133.0,
+    "defect_as_particle": 10.0,
+    "defect_missed": 9.0,
+    "particle_as_particle": 648.0,
+    "particle_as_defect": 133.0,
+    "particle_missed": 3.0,
+    "background_as_defect": 261.0,
+    "background_as_particle": 117.0
+   }
+  }
+ },
+ "C_cbam": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_cbam/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.9514591660581125,
+    "R": 0.8484848484848485,
+    "mAP50": 0.8584399999999998,
+    "mAP50_95": 0.46120499764902523
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.9514591660581125,
+     "R": 0.8484848484848485,
+     "mAP50": 0.8584399999999998,
+     "mAP50_95": 0.46120499764902523
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 23.0,
+    "defect_as_particle": 5.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 11.0,
+    "background_as_particle": 2.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_cbam/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.48642533936651583,
+    "R": 0.9862385321100917,
+    "mAP50": 0.7843949669946187,
+    "mAP50_95": 0.4612388043726017
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.48642533936651583,
+     "R": 0.9862385321100917,
+     "mAP50": 0.7843949669946187,
+     "mAP50_95": 0.4612388043726017
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 178.0,
+    "particle_missed": 40.0,
+    "background_as_defect": 9.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_cbam/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8583076269314813,
+    "R": 0.822429906542056,
+    "mAP50": 0.8683066701085537,
+    "mAP50_95": 0.32613422572747297
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8583076269314813,
+     "R": 0.822429906542056,
+     "mAP50": 0.8683066701085537,
+     "mAP50_95": 0.32613422572747297
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 67.0,
+    "defect_as_particle": 29.0,
+    "defect_missed": 11.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 50.0,
+    "background_as_particle": 14.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/C_cbam/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6813206396701954,
+    "R": 0.7866046612103236,
+    "mAP50": 0.709739631560653,
+    "mAP50_95": 0.455480109641991
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.4551532336101051,
+     "R": 0.6973684210526315,
+     "mAP50": 0.4815566300021208,
+     "mAP50_95": 0.24022023308035495
+    },
+    "particle": {
+     "P": 0.9074880457302857,
+     "R": 0.8758409013680156,
+     "mAP50": 0.9379226331191853,
+     "mAP50_95": 0.6707399862036272
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 125.0,
+    "defect_as_particle": 16.0,
+    "defect_missed": 11.0,
+    "particle_as_particle": 684.0,
+    "particle_as_defect": 89.0,
+    "particle_missed": 11.0,
+    "background_as_defect": 146.0,
+    "background_as_particle": 118.0
+   }
+  }
+ },
+ "D2_wiou_rclamp": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/D2_wiou_rclamp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8646267052948099,
+    "R": 0.5808193220118568,
+    "mAP50": 0.7546989996748213,
+    "mAP50_95": 0.43019823909967225
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8646267052948099,
+     "R": 0.5808193220118568,
+     "mAP50": 0.7546989996748213,
+     "mAP50_95": 0.43019823909967225
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 4.0,
+    "defect_as_particle": 17.0,
+    "defect_missed": 12.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 1.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/D2_wiou_rclamp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7816346659299895,
+    "R": 0.7339449541284404,
+    "mAP50": 0.8409132757392243,
+    "mAP50_95": 0.4890960786708708
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.7816346659299895,
+     "R": 0.7339449541284404,
+     "mAP50": 0.8409132757392243,
+     "mAP50_95": 0.4890960786708708
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 51.0,
+    "particle_as_defect": 1.0,
+    "particle_missed": 166.0,
+    "background_as_defect": 0.0,
+    "background_as_particle": 3.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/D2_wiou_rclamp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7505343104971293,
+    "R": 0.5623655757109333,
+    "mAP50": 0.7714584624864173,
+    "mAP50_95": 0.33635321806310026
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7505343104971293,
+     "R": 0.5623655757109333,
+     "mAP50": 0.7714584624864173,
+     "mAP50_95": 0.33635321806310026
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 15.0,
+    "defect_as_particle": 67.0,
+    "defect_missed": 25.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 2.0,
+    "background_as_particle": 26.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/D2_wiou_rclamp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5915048746099831,
+    "R": 0.6503088077336198,
+    "mAP50": 0.6317514438807804,
+    "mAP50_95": 0.3759580433030448
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.5403750908126467,
+     "R": 0.3618421052631579,
+     "mAP50": 0.44353749449860674,
+     "mAP50_95": 0.1948954113199446
+    },
+    "particle": {
+     "P": 0.6426346584073195,
+     "R": 0.9387755102040817,
+     "mAP50": 0.819965393262954,
+     "mAP50_95": 0.5570206752861451
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 46.0,
+    "defect_as_particle": 34.0,
+    "defect_missed": 72.0,
+    "particle_as_particle": 706.0,
+    "particle_as_defect": 10.0,
+    "particle_missed": 68.0,
+    "background_as_defect": 22.0,
+    "background_as_particle": 275.0
+   }
+  }
+ },
+ "D_wiou": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/D_wiou/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7698109463583551,
+    "R": 0.696969696969697,
+    "mAP50": 0.726871663142689,
+    "mAP50_95": 0.3924536649428435
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7698109463583551,
+     "R": 0.696969696969697,
+     "mAP50": 0.726871663142689,
+     "mAP50_95": 0.3924536649428435
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 5.0,
+    "defect_as_particle": 20.0,
+    "defect_missed": 8.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 4.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/D_wiou/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8068934319720159,
+    "R": 0.7798165137614679,
+    "mAP50": 0.8756987931310904,
+    "mAP50_95": 0.5031223933631905
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.8068934319720159,
+     "R": 0.7798165137614679,
+     "mAP50": 0.8756987931310904,
+     "mAP50_95": 0.5031223933631905
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 115.0,
+    "particle_as_defect": 10.0,
+    "particle_missed": 93.0,
+    "background_as_defect": 5.0,
+    "background_as_particle": 7.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/D_wiou/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7231501405157821,
+    "R": 0.683542305605336,
+    "mAP50": 0.753036346926666,
+    "mAP50_95": 0.3171754708935105
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7231501405157821,
+     "R": 0.683542305605336,
+     "mAP50": 0.753036346926666,
+     "mAP50_95": 0.3171754708935105
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 19.0,
+    "defect_as_particle": 69.0,
+    "defect_missed": 19.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 13.0,
+    "background_as_particle": 28.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/D_wiou/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6834585444231727,
+    "R": 0.6689373104284277,
+    "mAP50": 0.6983115335844524,
+    "mAP50_95": 0.4073704426807045
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6211820362926975,
+     "R": 0.5394052331017534,
+     "mAP50": 0.5952024047699626,
+     "mAP50_95": 0.2954076393581543
+    },
+    "particle": {
+     "P": 0.7457350525536479,
+     "R": 0.798469387755102,
+     "mAP50": 0.8014206623989423,
+     "mAP50_95": 0.5193332460032547
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 84.0,
+    "defect_as_particle": 36.0,
+    "defect_missed": 32.0,
+    "particle_as_particle": 674.0,
+    "particle_as_defect": 27.0,
+    "particle_missed": 83.0,
+    "background_as_defect": 82.0,
+    "background_as_particle": 271.0
+   }
+  }
+ },
+ "E_gw": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/E_gw/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8717954980650421,
+    "R": 0.7878787878787878,
+    "mAP50": 0.8176469563607721,
+    "mAP50_95": 0.4813451487054504
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8717954980650421,
+     "R": 0.7878787878787878,
+     "mAP50": 0.8176469563607721,
+     "mAP50_95": 0.4813451487054504
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 27.0,
+    "defect_as_particle": 1.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 19.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/E_gw/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.9079146454149108,
+    "R": 0.3618218904784191,
+    "mAP50": 0.6927133836494717,
+    "mAP50_95": 0.40867175379449777
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.9079146454149108,
+     "R": 0.3618218904784191,
+     "mAP50": 0.6927133836494717,
+     "mAP50_95": 0.40867175379449777
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 10.0,
+    "particle_as_defect": 13.0,
+    "particle_missed": 195.0,
+    "background_as_defect": 3.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/E_gw/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.771386681107789,
+    "R": 0.7850467289719626,
+    "mAP50": 0.806245489982815,
+    "mAP50_95": 0.3529232293619776
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.771386681107789,
+     "R": 0.7850467289719626,
+     "mAP50": 0.806245489982815,
+     "mAP50_95": 0.3529232293619776
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 95.0,
+    "defect_as_particle": 5.0,
+    "defect_missed": 7.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 70.0,
+    "background_as_particle": 7.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/E_gw/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7004550321858525,
+    "R": 0.7445668594651929,
+    "mAP50": 0.7520967415225377,
+    "mAP50_95": 0.4950865185337362
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.49932112107518806,
+     "R": 0.7763157894736842,
+     "mAP50": 0.6238516927280073,
+     "mAP50_95": 0.3182712034037106
+    },
+    "particle": {
+     "P": 0.901588943296517,
+     "R": 0.7128179294567014,
+     "mAP50": 0.8803417903170679,
+     "mAP50_95": 0.6719018336637618
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 141.0,
+    "defect_as_particle": 10.0,
+    "defect_missed": 1.0,
+    "particle_as_particle": 623.0,
+    "particle_as_defect": 159.0,
+    "particle_missed": 2.0,
+    "background_as_defect": 316.0,
+    "background_as_particle": 166.0
+   }
+  }
+ },
+ "F2_60ep": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.836110765878233,
+    "R": 0.7878787878787878,
+    "mAP50": 0.8361718759145766,
+    "mAP50_95": 0.4262762019958692
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.836110765878233,
+     "R": 0.7878787878787878,
+     "mAP50": 0.8361718759145766,
+     "mAP50_95": 0.4262762019958692
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 26.0,
+    "defect_as_particle": 2.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 10.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5152542372881356,
+    "R": 0.6972477064220184,
+    "mAP50": 0.6797198926739731,
+    "mAP50_95": 0.45803206516213535
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.5152542372881356,
+     "R": 0.6972477064220184,
+     "mAP50": 0.6797198926739731,
+     "mAP50_95": 0.45803206516213535
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 39.0,
+    "particle_as_defect": 3.0,
+    "particle_missed": 176.0,
+    "background_as_defect": 0.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7473837267276856,
+    "R": 0.7742173909696399,
+    "mAP50": 0.7441639134934097,
+    "mAP50_95": 0.3076178898226813
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7473837267276856,
+     "R": 0.7742173909696399,
+     "mAP50": 0.7441639134934097,
+     "mAP50_95": 0.3076178898226813
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 79.0,
+    "defect_as_particle": 17.0,
+    "defect_missed": 11.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 42.0,
+    "background_as_particle": 17.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_60ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5872433774446517,
+    "R": 0.8141111707841031,
+    "mAP50": 0.630030234574707,
+    "mAP50_95": 0.4078908480777551
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.33680835495082484,
+     "R": 0.8552631578947368,
+     "mAP50": 0.3897896945661771,
+     "mAP50_95": 0.23137822374920586
+    },
+    "particle": {
+     "P": 0.8376783999384787,
+     "R": 0.7729591836734694,
+     "mAP50": 0.8702707745832369,
+     "mAP50_95": 0.5844034724063043
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 136.0,
+    "defect_as_particle": 11.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 606.0,
+    "particle_as_defect": 143.0,
+    "particle_missed": 35.0,
+    "background_as_defect": 178.0,
+    "background_as_particle": 135.0
+   }
+  }
+ },
+ "F2_C_E": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_C_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.9285188332524433,
+    "R": 0.7872763324067752,
+    "mAP50": 0.7978948873392917,
+    "mAP50_95": 0.4427956284503698
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.9285188332524433,
+     "R": 0.7872763324067752,
+     "mAP50": 0.7978948873392917,
+     "mAP50_95": 0.4427956284503698
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 27.0,
+    "defect_as_particle": 1.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 17.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_C_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8909811805886928,
+    "R": 0.4908256880733945,
+    "mAP50": 0.670894752325091,
+    "mAP50_95": 0.41004056296576696
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.8909811805886928,
+     "R": 0.4908256880733945,
+     "mAP50": 0.670894752325091,
+     "mAP50_95": 0.41004056296576696
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 29.0,
+    "particle_as_defect": 13.0,
+    "particle_missed": 176.0,
+    "background_as_defect": 45.0,
+    "background_as_particle": 2.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_C_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8315175872175323,
+    "R": 0.8411214953271028,
+    "mAP50": 0.805112108675906,
+    "mAP50_95": 0.30830515161267236
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8315175872175323,
+     "R": 0.8411214953271028,
+     "mAP50": 0.805112108675906,
+     "mAP50_95": 0.30830515161267236
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 83.0,
+    "defect_as_particle": 14.0,
+    "defect_missed": 10.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 37.0,
+    "background_as_particle": 8.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/F2_C_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6471884166416372,
+    "R": 0.7897453476030512,
+    "mAP50": 0.6951862945893895,
+    "mAP50_95": 0.4664460496927365
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.38004687572859724,
+     "R": 0.7763157894736842,
+     "mAP50": 0.4649947946934935,
+     "mAP50_95": 0.2585323797652229
+    },
+    "particle": {
+     "P": 0.9143299575546772,
+     "R": 0.803174905732418,
+     "mAP50": 0.9253777944852856,
+     "mAP50_95": 0.6743597196202502
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 133.0,
+    "defect_as_particle": 10.0,
+    "defect_missed": 9.0,
+    "particle_as_particle": 647.0,
+    "particle_as_defect": 132.0,
+    "particle_missed": 5.0,
+    "background_as_defect": 215.0,
+    "background_as_particle": 98.0
+   }
+  }
+ },
+ "F3_C_D_E": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/F3_C_D_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7126070708889871,
+    "R": 0.5757575757575758,
+    "mAP50": 0.6992162290140984,
+    "mAP50_95": 0.37058108960264474
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7126070708889871,
+     "R": 0.5757575757575758,
+     "mAP50": 0.6992162290140984,
+     "mAP50_95": 0.37058108960264474
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 13.0,
+    "defect_as_particle": 12.0,
+    "defect_missed": 8.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 13.0,
+    "background_as_particle": 3.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/F3_C_D_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7539161047244701,
+    "R": 0.8027522935779816,
+    "mAP50": 0.8178196161473944,
+    "mAP50_95": 0.44281363522169964
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.7539161047244701,
+     "R": 0.8027522935779816,
+     "mAP50": 0.8178196161473944,
+     "mAP50_95": 0.44281363522169964
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 78.0,
+    "particle_as_defect": 20.0,
+    "particle_missed": 120.0,
+    "background_as_defect": 7.0,
+    "background_as_particle": 16.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/F3_C_D_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6045690959883474,
+    "R": 0.7476635514018691,
+    "mAP50": 0.6673549840411288,
+    "mAP50_95": 0.2609945910020382
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6045690959883474,
+     "R": 0.7476635514018691,
+     "mAP50": 0.6673549840411288,
+     "mAP50_95": 0.2609945910020382
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 48.0,
+    "defect_as_particle": 38.0,
+    "defect_missed": 21.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 42.0,
+    "background_as_particle": 27.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/F3_C_D_E/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5451802043394817,
+    "R": 0.6557129430719656,
+    "mAP50": 0.5780302149115114,
+    "mAP50_95": 0.3273144968260596
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.3300162880855568,
+     "R": 0.631578947368421,
+     "mAP50": 0.35335942651611035,
+     "mAP50_95": 0.14511952486954427
+    },
+    "particle": {
+     "P": 0.7603441205934065,
+     "R": 0.6798469387755102,
+     "mAP50": 0.8027010033069124,
+     "mAP50_95": 0.509509468782575
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 120.0,
+    "defect_as_particle": 12.0,
+    "defect_missed": 20.0,
+    "particle_as_particle": 569.0,
+    "particle_as_defect": 152.0,
+    "particle_missed": 63.0,
+    "background_as_defect": 325.0,
+    "background_as_particle": 347.0
+   }
+  }
+ },
+ "F_combo": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/F_combo/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7980325221996124,
+    "R": 0.5151515151515151,
+    "mAP50": 0.6482758387944638,
+    "mAP50_95": 0.305214521996004
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7980325221996124,
+     "R": 0.5151515151515151,
+     "mAP50": 0.6482758387944638,
+     "mAP50_95": 0.305214521996004
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 12.0,
+    "defect_as_particle": 11.0,
+    "defect_missed": 10.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 5.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/F_combo/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6688498813492777,
+    "R": 0.6192660550458715,
+    "mAP50": 0.6313795748655144,
+    "mAP50_95": 0.33477408893785837
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.6688498813492777,
+     "R": 0.6192660550458715,
+     "mAP50": 0.6313795748655144,
+     "mAP50_95": 0.33477408893785837
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 4.0,
+    "particle_as_defect": 4.0,
+    "particle_missed": 210.0,
+    "background_as_defect": 119.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/F_combo/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6943038299137992,
+    "R": 0.5514018691588785,
+    "mAP50": 0.6279675775112417,
+    "mAP50_95": 0.24202803723704816
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6943038299137992,
+     "R": 0.5514018691588785,
+     "mAP50": 0.6279675775112417,
+     "mAP50_95": 0.24202803723704816
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 38.0,
+    "defect_as_particle": 36.0,
+    "defect_missed": 33.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 15.0,
+    "background_as_particle": 28.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/F_combo/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.529592324134916,
+    "R": 0.6581632653061225,
+    "mAP50": 0.5898616056678406,
+    "mAP50_95": 0.3075534497075033
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.3434095889837927,
+     "R": 0.625,
+     "mAP50": 0.46794450314288444,
+     "mAP50_95": 0.20122214446765857
+    },
+    "particle": {
+     "P": 0.7157750592860392,
+     "R": 0.6913265306122449,
+     "mAP50": 0.7117787081927968,
+     "mAP50_95": 0.41388475494734794
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 97.0,
+    "defect_as_particle": 13.0,
+    "defect_missed": 42.0,
+    "particle_as_particle": 526.0,
+    "particle_as_defect": 55.0,
+    "particle_missed": 203.0,
+    "background_as_defect": 126.0,
+    "background_as_particle": 219.0
+   }
+  }
+ },
+ "rtdetr": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/rtdetr_l_20ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.931642065668494,
+    "R": 0.8484848484848485,
+    "mAP50": 0.8434539122170133,
+    "mAP50_95": 0.49936252026923017
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.931642065668494,
+     "R": 0.8484848484848485,
+     "mAP50": 0.8434539122170133,
+     "mAP50_95": 0.49936252026923017
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 29.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 4.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 1.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/rtdetr_l_20ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.9588120792754471,
+    "R": 0.14678899082568808,
+    "mAP50": 0.145600500046161,
+    "mAP50_95": 0.11654539888848992
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.9588120792754471,
+     "R": 0.14678899082568808,
+     "mAP50": 0.145600500046161,
+     "mAP50_95": 0.11654539888848992
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 31.0,
+    "particle_as_defect": 174.0,
+    "particle_missed": 13.0,
+    "background_as_defect": 13.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/rtdetr_l_20ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.9518865574723213,
+    "R": 0.9245024367168355,
+    "mAP50": 0.8986740160993265,
+    "mAP50_95": 0.36322484526331783
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.9518865574723213,
+     "R": 0.9245024367168355,
+     "mAP50": 0.8986740160993265,
+     "mAP50_95": 0.36322484526331783
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 102.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 4.0,
+    "background_as_particle": 4.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/rtdetr_l_20ep/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7098148641067036,
+    "R": 0.7603719119226638,
+    "mAP50": 0.7060370258634681,
+    "mAP50_95": 0.5092970204571328
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.47404375916347247,
+     "R": 0.8026315789473685,
+     "mAP50": 0.6588001311206768,
+     "mAP50_95": 0.4173004937623109
+    },
+    "particle": {
+     "P": 0.9455859690499347,
+     "R": 0.7181122448979592,
+     "mAP50": 0.7532739206062593,
+     "mAP50_95": 0.6012935471519546
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 141.0,
+    "defect_as_particle": 10.0,
+    "defect_missed": 1.0,
+    "particle_as_particle": 608.0,
+    "particle_as_defect": 176.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 50.0,
+    "background_as_particle": 224.0
+   }
+  }
+ },
+ "v10n_comp": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/v10n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7570420928304914,
+    "R": 0.6611176596465761,
+    "mAP50": 0.7040105930448768,
+    "mAP50_95": 0.35683097865715085
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7570420928304914,
+     "R": 0.6611176596465761,
+     "mAP50": 0.7040105930448768,
+     "mAP50_95": 0.35683097865715085
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 16.0,
+    "defect_as_particle": 2.0,
+    "defect_missed": 15.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 3.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/v10n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.37872340425531914,
+    "R": 0.8165137614678899,
+    "mAP50": 0.5097800834627882,
+    "mAP50_95": 0.3187920225433597
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.37872340425531914,
+     "R": 0.8165137614678899,
+     "mAP50": 0.5097800834627882,
+     "mAP50_95": 0.3187920225433597
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 1.0,
+    "particle_as_defect": 106.0,
+    "particle_missed": 111.0,
+    "background_as_defect": 18.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/v10n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6192330588481447,
+    "R": 0.7009345794392523,
+    "mAP50": 0.7078762179988561,
+    "mAP50_95": 0.28816393103091686
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.6192330588481447,
+     "R": 0.7009345794392523,
+     "mAP50": 0.7078762179988561,
+     "mAP50_95": 0.28816393103091686
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 73.0,
+    "defect_as_particle": 2.0,
+    "defect_missed": 32.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 36.0,
+    "background_as_particle": 2.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/v10n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.5000029872616579,
+    "R": 0.5766711342864299,
+    "mAP50": 0.5161620553442151,
+    "mAP50_95": 0.3359099570837779
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.2561605075724822,
+     "R": 0.7236842105263158,
+     "mAP50": 0.36804100857229394,
+     "mAP50_95": 0.22043317378497979
+    },
+    "particle": {
+     "P": 0.7438454669508336,
+     "R": 0.4296580580465439,
+     "mAP50": 0.6642831021161363,
+     "mAP50_95": 0.45138674038257615
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 107.0,
+    "defect_as_particle": 6.0,
+    "defect_missed": 39.0,
+    "particle_as_particle": 300.0,
+    "particle_as_defect": 149.0,
+    "particle_missed": 335.0,
+    "background_as_defect": 104.0,
+    "background_as_particle": 82.0
+   }
+  }
+ },
+ "v5n_comp": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/v5n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8190478082277418,
+    "R": 0.8181818181818182,
+    "mAP50": 0.8134715178794697,
+    "mAP50_95": 0.4315091225885056
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8190478082277418,
+     "R": 0.8181818181818182,
+     "mAP50": 0.8134715178794697,
+     "mAP50_95": 0.4315091225885056
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 21.0,
+    "defect_as_particle": 7.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 13.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/v5n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8645595171127948,
+    "R": 0.4908256880733945,
+    "mAP50": 0.7868032314790931,
+    "mAP50_95": 0.5820723679194093
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.8645595171127948,
+     "R": 0.4908256880733945,
+     "mAP50": 0.7868032314790931,
+     "mAP50_95": 0.5820723679194093
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 21.0,
+    "particle_as_defect": 89.0,
+    "particle_missed": 108.0,
+    "background_as_defect": 17.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/v5n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7079523204245365,
+    "R": 0.6343541930146104,
+    "mAP50": 0.7232693471158146,
+    "mAP50_95": 0.28131977646075634
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.7079523204245365,
+     "R": 0.6343541930146104,
+     "mAP50": 0.7232693471158146,
+     "mAP50_95": 0.28131977646075634
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 69.0,
+    "defect_as_particle": 22.0,
+    "defect_missed": 16.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 39.0,
+    "background_as_particle": 13.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/v5n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.7106595484677167,
+    "R": 0.718399769353435,
+    "mAP50": 0.7698294141114945,
+    "mAP50_95": 0.45458831242882763
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.5218890626872683,
+     "R": 0.7181388790358032,
+     "mAP50": 0.637896731601815,
+     "mAP50_95": 0.2998797224613747
+    },
+    "particle": {
+     "P": 0.8994300342481651,
+     "R": 0.7186606596710668,
+     "mAP50": 0.9017620966211741,
+     "mAP50_95": 0.6092969023962805
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 131.0,
+    "defect_as_particle": 11.0,
+    "defect_missed": 10.0,
+    "particle_as_particle": 638.0,
+    "particle_as_defect": 113.0,
+    "particle_missed": 33.0,
+    "background_as_defect": 197.0,
+    "background_as_particle": 113.0
+   }
+  }
+ },
+ "v8n_comp": {
+  "val": {
+   "weights": "CoatingDet-Defect-Detection/runs/v8n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_val.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8921916081790606,
+    "R": 0.7524934927613111,
+    "mAP50": 0.7850955607743513,
+    "mAP50_95": 0.45098340084905014
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8921916081790606,
+     "R": 0.7524934927613111,
+     "mAP50": 0.7850955607743513,
+     "mAP50_95": 0.45098340084905014
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 25.0,
+    "defect_as_particle": 3.0,
+    "defect_missed": 5.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 10.0,
+    "background_as_particle": 1.0
+   }
+  },
+  "test1": {
+   "weights": "CoatingDet-Defect-Detection/runs/v8n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test1.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.3857758620689655,
+    "R": 0.8211009174311926,
+    "mAP50": 0.612061617680445,
+    "mAP50_95": 0.43845499479436273
+   },
+   "per_class": {
+    "particle": {
+     "P": 0.3857758620689655,
+     "R": 0.8211009174311926,
+     "mAP50": 0.612061617680445,
+     "mAP50_95": 0.43845499479436273
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 0.0,
+    "defect_as_particle": 0.0,
+    "defect_missed": 0.0,
+    "particle_as_particle": 6.0,
+    "particle_as_defect": 149.0,
+    "particle_missed": 63.0,
+    "background_as_defect": 22.0,
+    "background_as_particle": 0.0
+   }
+  },
+  "test2": {
+   "weights": "CoatingDet-Defect-Detection/runs/v8n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test2.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.8241731013799856,
+    "R": 0.7850467289719626,
+    "mAP50": 0.8475040465563576,
+    "mAP50_95": 0.3657572394817125
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.8241731013799856,
+     "R": 0.7850467289719626,
+     "mAP50": 0.8475040465563576,
+     "mAP50_95": 0.3657572394817125
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 80.0,
+    "defect_as_particle": 20.0,
+    "defect_missed": 7.0,
+    "particle_as_particle": 0.0,
+    "particle_as_defect": 0.0,
+    "particle_missed": 0.0,
+    "background_as_defect": 32.0,
+    "background_as_particle": 13.0
+   }
+  },
+  "test3": {
+   "weights": "CoatingDet-Defect-Detection/runs/v8n_comp/weights/best.pt",
+   "data": "CoatingDet-Defect-Detection\\configs\\data_test3.yaml",
+   "settings": {
+    "imgsz": 512,
+    "conf": 0.001,
+    "nms_iou": 0.7
+   },
+   "overall": {
+    "P": 0.6827495545235395,
+    "R": 0.7949113856068744,
+    "mAP50": 0.7887740418621811,
+    "mAP50_95": 0.4857585707755758
+   },
+   "per_class": {
+    "defect": {
+     "P": 0.49311154921088846,
+     "R": 0.8092105263157895,
+     "mAP50": 0.6853377382748954,
+     "mAP50_95": 0.33681503785706596
+    },
+    "particle": {
+     "P": 0.8723875598361904,
+     "R": 0.7806122448979592,
+     "mAP50": 0.8922103454494669,
+     "mAP50_95": 0.6347021036940855
+    }
+   },
+   "confusion": {
+    "defect_as_defect": 136.0,
+    "defect_as_particle": 14.0,
+    "defect_missed": 2.0,
+    "particle_as_particle": 655.0,
+    "particle_as_defect": 112.0,
+    "particle_missed": 17.0,
+    "background_as_defect": 148.0,
+    "background_as_particle": 140.0
+   }
+  }
+ }
+}

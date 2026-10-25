@@ -35,10 +35,14 @@ def _wiou_iou(pb, tb):
 
 
 class WIoUBboxLoss(_loss_mod.BboxLoss):
-    def __init__(self, reg_max: int = 16, momentum: float = 0.9):
+    def __init__(self, reg_max: int = 16, momentum: float = 0.9,
+                 alpha: float = ALPHA, delta: float = DELTA,
+                 r_min: float = None, r_max: float = None):
         super().__init__(reg_max)
         self.iou_mean = 1.0          # IoU 均值 EMA（离群度基准）
         self.momentum = momentum
+        self.alpha, self.delta = alpha, delta
+        self.r_min, self.r_max = r_min, r_max   # 梯度分配系数截断（防难例梯度被压没）
 
     def forward(self, pred_dist, pred_bboxes, anchor_points, target_bboxes,
                 target_scores, target_scores_sum, fg_mask):
@@ -50,7 +54,11 @@ class WIoUBboxLoss(_loss_mod.BboxLoss):
                              + (1 - self.momentum) * iou.mean().item())
             r_wiou = torch.exp(d2 / c2.clamp(1e-9))          # 距离注意力，无梯度
             beta = (1.0 - self.iou_mean) / (1.0 - iou + 1e-9)  # 离群度 β
-            r = beta / (DELTA * ALPHA ** (beta - DELTA))     # 梯度分配系数，无梯度
+            r = beta / (self.delta * self.alpha ** (beta - self.delta))  # 梯度分配系数
+            if self.r_min is not None:
+                r = r.clamp(min=self.r_min)
+            if self.r_max is not None:
+                r = r.clamp(max=self.r_max)
         loss_iou = ((r * r_wiou * (1.0 - iou)) * weight).sum() / target_scores_sum
 
         # DFL 部分与原实现一致
@@ -65,6 +73,9 @@ class WIoUBboxLoss(_loss_mod.BboxLoss):
         return loss_iou, loss_dfl
 
 
-def apply():
-    """把 v8DetectionLoss 内的 BboxLoss 换成 WIoU 版（模块级名字替换）。"""
-    _loss_mod.BboxLoss = WIoUBboxLoss
+def apply(alpha: float = None, delta: float = None, r_min: float = None, r_max: float = None):
+    """把 v8DetectionLoss 内的 BboxLoss 换成 WIoU 版（模块级名字替换）。
+    参数为 None 时用模块默认 ALPHA/DELTA、不截断。"""
+    from functools import partial
+    kwargs = {k: v for k, v in dict(alpha=alpha, delta=delta, r_min=r_min, r_max=r_max).items() if v is not None}
+    _loss_mod.BboxLoss = partial(WIoUBboxLoss, **kwargs)
