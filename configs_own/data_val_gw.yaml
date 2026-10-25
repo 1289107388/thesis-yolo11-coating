@@ -1,0 +1,5 @@
+path: D:/毕业论文/02_代码/CoatingDet-Defect-Detection/datasets
+train: train/tiles_gw/train/images
+val: train/tiles_gw/val/images
+nc: 2
+names: ['defect', 'particle']
