@@ -1,0 +1,20 @@
+# 数据与权重（体积大，绝不进仓库）
+*.zip
+*.pt
+*.onnx
+*.aria2
+
+# 训练输出与数据目录
+runs/
+data/
+datasets/
+wandb/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# 官方代码克隆（只读参考，不纳入本仓库）
+CoatingDet-Defect-Detection/
