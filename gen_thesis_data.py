@@ -48,6 +48,10 @@ def main():
             if m:
                 entry[dom] = {"P": round(m["P"], 3), "R": round(m["R"], 3),
                               "mAP50": round(m["mAP50"], 3), "mAP50_95": round(m["mAP50_95"], 3)}
+                pc_ = merged[key].get(src, {}).get("per_class") or {}
+                for cname, cm in pc_.items():
+                    entry[dom][cname] = {"mAP50": round(cm["mAP50"], 3),
+                                         "mAP50_95": round(cm["mAP50_95"], 3)}
         out["exp"][key] = entry
 
     # 参数量与 GFLOPs（读权重）
